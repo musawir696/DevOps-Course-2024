@@ -1,0 +1,21 @@
+https://medium.com/@abdulmusawir3545/setting-up-a-ci-cd-pipeline-with-kubernetes-a-step-by-step-guide-d37a80c005f5
+
+This blog provides a concise guide on setting up a CI/CD pipeline with Kubernetes, covering the key steps and tools required for automating the building, testing, and deployment of applications.
+
+Key Concepts in CI/CD
+Continuous Integration (CI) involves frequently merging code changes and running automated tests to catch issues early.
+Continuous Deployment (CD) deploys tested code to production or staging environments, allowing for continuous delivery of updates.
+Architecture & Components
+The CI/CD architecture integrates:
+Version Control (e.g., Git) for managing code.
+CI/CD Tools (e.g., Jenkins or GitLab CI) to handle build and deployment automation.
+Container Registry (e.g., Docker Hub) for storing and retrieving container images.
+Kubernetes Cluster (e.g., Minikube for local or AKS/EKS for cloud) for scalable application deployment.
+Step-by-Step CI/CD Pipeline Setup
+Prerequisites: Ensure a Kubernetes cluster, Git repository, Docker, and Jenkins or GitLab CI setup.
+Jenkins Installation: Install Jenkins on the Kubernetes cluster using Helm, a Kubernetes package manager. After installation, access Jenkins by retrieving the admin password and port-forwarding.
+Configuring the Jenkins Pipeline: Install Docker and Kubernetes plugins in Jenkins, create a new pipeline job, and use a Jenkinsfile with defined stages for building, pushing, and deploying the Docker image to Kubernetes.
+Kubernetes Deployment Configuration: Define a deployment YAML file specifying app replicas, image, and port configurations.
+Automating Rollouts: Kubernetes supports rolling updates to handle new versions smoothly and commands for rollbacks if needed.
+Conclusion
+Automating CI/CD with Kubernetes significantly enhances application lifecycle management, ensuring updates are seamlessly deployed and scaled as needed. This setup fosters efficient, continuous delivery, keeping applications up to date with recent changes.
