@@ -17,7 +17,7 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 ### Deployment
 ## Project Architecture
-The Recipe App is structured as a web application that provides  The app is built with React API Project Tutorial Using Hooks, Axios and Firebase and is packaged in Docker containers for efficient deployment.
+The Recipe App is structured as a web application that provides recipe. The app is built with React API Project Tutorial Using Hooks, Axios and Firebase and is packaged in Docker containers for efficient deployment.
 
 ## Technologies Used
 Docker: For containerization, packaging the application and its dependencies.
